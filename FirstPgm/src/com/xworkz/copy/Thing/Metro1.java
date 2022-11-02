@@ -1,6 +1,5 @@
 package com.xworkz.copy.Thing;
 
-public class Bus {
-	
+public class Metro1 {
 
 }
