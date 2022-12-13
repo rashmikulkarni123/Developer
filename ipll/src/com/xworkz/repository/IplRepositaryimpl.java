@@ -18,7 +18,7 @@ public class IplRepositaryimpl implements IplRepositary {
 			throw new ArraySizeIsFullCantAddMore();
 		}
 		
-		this.iplDto[this.index]=dto;
+		this.IplDto[this.index]=dto;
 		System.out.println("Saved:"+dto+"In index"+this.index);
 		index++;
 		
