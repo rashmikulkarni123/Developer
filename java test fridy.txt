@@ -1,0 +1,95 @@
+3. what are the generalized and specilized classses in java?
+--> The generalized class is nothing but a parent class or a super class
+--> The speclized class is nothing but a child class or a sub class
+
+
+4a. i dont want my class to be inherited by any other class. what should i do?
+--> we should not put extend keyword to inherit the other class
+
+
+4b. can you give a few examples of final classes defined in API?
+-->  when we use extend keyword we cannot modify the program
+--> we cannot inherit the class
+--> we use final keyword in abstraction.
+java.lang.string
+java.lang.math 
+
+
+4c. what are some alternatives to inheritance?
+-->  Deligation can be alternative to inheritance 
+     Deligataion means that you use an object of another class as an instance variable, and forward message to the innstance
+
+
+5. which sorted collection have you used?
+-->  CompareTo
+--> Comparable
+
+
+6. what is the difference between linkedlist and arraylist in java?
+--> Linked List
+    1. Linked list uses a doubly linkedlist
+    2. Linked list is use to manipulate data
+    3. Linked list is faster in read operation
+    4. Writing is slower than arraylist
+   
+--> ArrayList
+    1. Arraylist is a dynamic array
+    2. Arraylist is used to store and fetch the data
+    3. Arraylist is slower in read operation
+    4. ArrayList is faster in writing
+
+
+7. what is the difference between betweeen listiterator and itrator?
+--> ListIterator
+   1. Can traverse elements present in Collection both in forward and backward directions.
+   2. Can only traverse List and not the other two. 
+   3. It has methods like nextIndex() and previousIndex() to obtain indexes of elements at any time while traversing List.
+--> Iterator
+  1. Iterator can traverse only in forward direction whereas ListIterator traverses both in forward and backward directions.
+  2. Helps to traverse Map, List and Set.
+  3. Indexes cannot be obtained by using Iterator.
+
+
+8. what is the covariant method overriding in java?
+--> when override in a method in child class the return type may vary is know as covariant method overriding in java
+
+
+9.what is memory leakage in java?
+-->A Memory Leak is a situation where there are objects present in the heap that are no longer used,
+   but the garbage collector is unable to remove them from memory and therefore they're unnecessarily maintained.
+
+
+10. explain static polymorphims and dynamic polymorphism?
+ * Static polymorphism is polymorphism that occurs at compile time.
+--> An aspect of static polymorphism is early binding. In early binding the specific method to call is resolved at compile time.
+--> Early binding is faster because there is no runtime overhead. 
+--> Early binding is the default behavior.
+ * dynamic polymorphism is polymorphism that occurs at runtime.
+--> Dynamic polymorphism in Java refers to the process when a call to an overridden process is resolved at the run time. 
+--> The reference variable of a superclass calls the overridden method. 
+--> Dynamic polymorphism happens among different classes as opposed to static polymorphism.
+
+11. Hema created a class called personal information and she want to give security for the properties how can she achive?
+--> we can achive it by using access specifer called "private"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
