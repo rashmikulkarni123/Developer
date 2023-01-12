@@ -21,7 +21,7 @@ java.lang.math
 
 
 5. which sorted collection have you used?
--->  CompareTo
+-->  Comparator
 --> Comparable
 
 
