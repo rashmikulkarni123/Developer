@@ -1,0 +1,69 @@
+1. Describe the collections type hierarchy. what are the main interfaces and what are the difference between them?
+------>Java Collection Hierarchy is the hierarchy of the whole collection framework and it contained within it with four core interfaces.
+       They are Collection, Set, Map and List.
+------> Main interfaces in collection are
+      1. Iterable
+      2. Collection
+      3.List
+      4.Set
+      -> Sorted Set
+------> Difference between main interfaces
+--> Linked List
+    1. Linked list uses a doubly linkedlist
+    2. Linked list is use to manipulate data
+    3. Linked list is faster in read operation
+    4. Writing is slower than arraylist
+   
+--> ArrayList
+    1. Arraylist is a dynamic array
+    2. Arraylist is used to store and fetch the data
+    3. Arraylist is slower in read operation
+    4. ArrayList is faster in writing
+2. Describe various implimentations of the map interface and their use case defferencs?
+-----> 
+
+
+
+3. What is the difference between hash set and tree set?
+  
+
+               Hash Set                                                     Tree set
+1. The Hash set is executed with the help of a HashTable.       1.The tree set is executed with the help of a tree structure.
+2. It does not authorise a heterogeneous object.                2.It authorises a heterogeneous object.
+3. It permits a null object.                                    3.It does not permit the null object.
+4. To compare two objects, we use the equals method.            4.To compare two objects, we use the compare method.
+5. It does not support any order                                5.TreeSet supports an object in sorted order.
+
+5. what is fail fast and fail safe iterator?
+-----> Fail-safe iterators means 
+       they will not throw any exception even if the collection is modified while iterating over it.
+     > The Fail-Fast system terminates the operation as-fast-as-possible 
+       that are exposing failures and stop the entire operation
+----->  Fail-fast iterators throw an exception(ConcurrentModificationException).
+       if the collection is modified while iterating over it. 
+       As arrayLists are fail-fast above code will throw an exception.
+     > Fail-Safe system doesn't terminate the operation that are exposing failures. 
+     > The Fail-safe system tries to avoid raising Failures as much as possible.
+
+6. How to convert String to Stream of chars?
+----->  The String API has a new method – chars() – with which we can obtain an instance of Stream from a String object.
+----->  This simple API returns an instance of IntStream from the input String.
+----->  IntStream contains an integer representation of the characters from the String object:
+----->  String testString = "String";
+        IntStream intStream = testString.chars();
+        Copy
+------> It's possible to work with the integer representation of the characters without converting them to their Character equivalent. 
+------> This can lead to some minor performance gains, as there will be no need to box each integer into a Character object.
+
+7. explain spliterator API?
+------>  The Spliterator API was designed to support efficient parallel traversal in addition to sequential traversal.
+         by supporting decomposition as well as single-element iteration.
+------>  Spliterator is an internal iterator that breaks the stream into the smaller parts. 
+         These smaller parts can be processed in parallel. Among other methods.
+         There are two most important to understand the Spliterator: boolean tryAdvance
+
+8. what is spring core?
+------>   spring-core is the core of the framework that power features such as Inversion of Control and dependency injection.
+          Beans spring-beans provides Beanfactory, which is a sophisticated implementation of the factory pattern.
+9. explain dependency injection? how to achive it?
+------->  
